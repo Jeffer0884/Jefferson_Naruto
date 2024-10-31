@@ -1,0 +1,62 @@
+/* FavoritesList.css */
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f3f4f6;
+}
+
+.favorites-list h2 {
+  font-size: 24px;
+  color: #3f51b5;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Ajustado para tarjetas más pequeñas */
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.favorite-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 150px; /* Ancho fijo para tarjetas más pequeñas */
+}
+
+.favorite-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-card img {
+  width: 100%;
+  height: 120px; /* Imagen más pequeña */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.favorite-card:hover img {
+  transform: scale(1.03);
+}
+
+.favorite-card .character-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding: 8px;
+  background-color: #f0f0f0; /* Fondo para el nombre */
+  border-top: 1px solid #e0e0e0;
+}

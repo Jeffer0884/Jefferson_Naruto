@@ -1,0 +1,89 @@
+/* General styles for the App */
+body {
+  background-color: #181818; /* Dark background for the app */
+  color: #ffffff; /* White text color */
+  font-family: Arial, sans-serif; /* Clean and modern font */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex; /* Add display flex */
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px; /* Adds spacing around the main content */
+}
+
+/* Header styles */
+.header {
+  background-color: #333; /* Darker header background */
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: #ffcc00; /* Highlight header text */
+  font-size: 2.5rem; /* Larger font size for header */
+}
+
+/* Character card styles */
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between cards */
+  justify-content: center; /* Center cards in the container */
+}
+
+.card {
+  background: rgba(50, 50, 50, 0.8); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners for cards */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  padding: 20px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+  display: flex; /* Use flexbox for card layout */
+  align-items: center; /* Center content vertically */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+  box-shadow: 0 6px 15px rgba(251, 133, 6, 0.7); /* Increased shadow on hover */
+}
+
+.card-image {
+  width: 30%; /* Adjusted width for better image sizing */
+  height: auto;
+  border-radius: 5px; /* Rounded corners for images */
+  margin-left: 10px; /* Space between image and content */
+}
+
+.card-content {
+  background: rgba(0, 0, 0, 0.7); /* Darker background for text area */
+  padding: 15px;
+  border-radius: 5px; /* Rounded corners for content */
+  flex: 1; /* Allow content to grow and fill space */
+}
+
+.card-content h2 {
+  margin: 0 0 10px; /* Adjusted margin */
+  font-size: 1.8rem; /* Slightly smaller font size */
+  color: #ffcc00; /* Highlighted character name */
+}
+
+.card-content p {
+  margin: 5px 0; /* Adjusted spacing */
+  color: #dddddd; /* Light gray text for details */
+}
+
+.card-link {
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.2s; /* Smooth color transition */
+}
+
+.card-link:hover {
+  color: #ffcc00; /* Change link color on hover */
+}

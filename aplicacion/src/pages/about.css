@@ -1,0 +1,22 @@
+.about-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #b0bec5; /* Gris azulado claro */
+  border-radius: 10px;
+  background-color: #eceff1; /* Fondo gris muy claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+  color: #3f51b5; /* Azul profundo */
+  font-size: 28px;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 18px;
+  color: #424242; /* Gris oscuro para mejor legibilidad */
+  line-height: 1.6; /* Mejora el espaciado entre líneas */
+}

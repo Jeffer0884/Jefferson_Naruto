@@ -1,0 +1,110 @@
+.character-detail {
+  width: 95%;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #b0bec5; /* Gris azulado claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+  background-color: #eceff1; /* Fondo gris muy claro */
+}
+
+.character-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.character-detail h2 {
+  color: #3f51b5; /* Azul profundo */
+  font-size: 26px;
+  font-family: "Anime Ace", sans-serif;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.favorite-icon {
+  cursor: pointer;
+  font-size: 26px;
+  color: #607d8b; /* Gris oscuro */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.favorite-icon:hover {
+  color: #90caf9; /* Azul claro al pasar el mouse */
+  transform: scale(1.1);
+}
+
+.favorite-icon.favorited i {
+  color: #f44336; /* Rojo para favoritos */
+}
+
+.content-container {
+  display: flex; /* Flexbox para alinear horizontalmente */
+  margin-bottom: 30px; /* Margen inferior */
+}
+.image-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.large-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carousel-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-button,
+.next-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text-container {
+  width: 60%; /* Ancho para el contenedor de texto */
+  display: flex;
+  flex-direction: column; /* Alinea el texto verticalmente */
+  justify-content: flex-start; /* Alinea el texto al inicio */
+}
+
+.character-detail p {
+  margin: 12px 0;
+  font-size: 18px;
+  color: #424242; /* Gris oscuro para mejor legibilidad */
+}
+
+.character-detail strong {
+  color: #3f51b5; /* Azul profundo para texto fuerte */
+}
+
+.character-detail a {
+  text-decoration: none;
+  color: #fff; /* Blanco para el texto del enlace */
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px; /* Añadí padding para el botón */
+  background-color: #3f51b5; /* Azul profundo */
+  border-radius: 6px; /* Radio de borde */
+  transition: background-color 0.3s, transform 0.2s; /* Efectos al hacer hover */
+}
+
+.character-detail a:hover {
+  background-color: #3949ab; /* Azul más oscuro al hacer hover */
+  transform: scale(1.05); /* Efecto de escalado al hacer hover */
+}
